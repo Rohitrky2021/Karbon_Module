@@ -5,8 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button"
 
-// Ensure this function is correctly imported from your lib file
-import { probe_model_5l_profit } from '@/lib/rules'; 
+ import { probe_model_5l_profit } from '@/lib/rules'; 
 
 export default function Component() {
   const [fileAttributes, setFileAttributes] = useState({});
@@ -14,19 +13,18 @@ export default function Component() {
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
-    console.log("File selected:", file); // Debugging: check file object
+    console.log("File selected:", file);  
 
     if (file) {
       try {
         const fileContent = await file.text();
-        console.log("File content:", fileContent); // Debugging: check file content
-        const data = JSON.parse(fileContent); // Assumes JSON data format
-        console.log('Data from file:', data); // Debugging: check data object
-        // Call the function and get the attributes
+        console.log("File content:", fileContent);  
+        const data = JSON.parse(fileContent); 
+        console.log('Data from file:', data); 
+       
         const result = probe_model_5l_profit(data.data);
 
-        console.log("output: ", result); // Debugging: check result object
-
+        console.log("output: ", result);  
         setFileAttributes(result.flags);
         setShowAttributes(true);
       } catch (error) {
