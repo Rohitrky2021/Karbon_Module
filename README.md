@@ -7,7 +7,7 @@
 
 - **Google Drive Link**: [Challenge-1: Solution PDF](https://drive.google.com/file/d/1E3cmsNnvrpXCzXCE7m3rXk7dp64lRmx0/view?usp=drive_link)  
 - **GitHub Repository**: [Your GitHub Repo](https://github.com/Rohitrky2021/Karbon_Module)
-- **Deployed Application**: [Project LINK](karbon-module.vercel.app) 
+- **Deployed Application**: [Project LINK](https://karbon-module.vercel.app/) 
 - **Solution Explanation Video**: [Video LINK](https://www.loom.com/share/4eff5a73464d4be0a1c274a50c51acfc?sid=b8b5ca10-87b8-4e4f-8bc5-c52fa1fb1e14) 
 
 
