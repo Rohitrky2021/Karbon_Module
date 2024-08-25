@@ -13,18 +13,18 @@ export default function Component() {
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
-    console.log("File selected:", file);  
+    // console.log("File selected:", file);  
 
     if (file) {
       try {
         const fileContent = await file.text();
-        console.log("File content:", fileContent);  
+        // console.log("File content:", fileContent);  
         const data = JSON.parse(fileContent); 
-        console.log('Data from file:', data); 
+        // console.log('Data from file:', data); 
        
         const result = probe_model_5l_profit(data.data);
 
-        console.log("output: ", result);  
+        // console.log("output: ", result);  
         setFileAttributes(result.flags);
         setShowAttributes(true);
       } catch (error) {
